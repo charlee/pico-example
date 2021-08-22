@@ -5,10 +5,12 @@ from time import sleep
 led_red = DigitalInOut(GP15)
 led_amber = DigitalInOut(GP14)
 led_green = DigitalInOut(GP13)
+buzzer = DigitalInOut(GP12)
 
 led_red.switch_to_output()
 led_amber.switch_to_output()
 led_green.switch_to_output()
+buzzer.switch_to_output()
 
 button = DigitalInOut(GP16)
 button.pull = Pull.DOWN
